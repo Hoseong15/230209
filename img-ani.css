@@ -1,0 +1,36 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.animated-container{
+  position: relative;
+  width: 70%;
+  background-color: dodgerblue;
+  margin: 30px auto;
+}
+
+.animated-container img{
+  width: 50%;
+}
+
+.elements{
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: move 1.5s linear infinite;
+}
+
+/* 0%는 애니메이션의 시작 의미하고 , 100% 애니메이션의 종료를 의미한다. */
+@keyframes move {
+  0% {
+    transform: translate(-15px, 0px);
+  }
+  50% {
+    transform: translate(0px, -15px);
+  }
+  100% {
+    transform: translate(-15px, 0px);
+  }
+}
